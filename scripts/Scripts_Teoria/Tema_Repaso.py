@@ -118,3 +118,7 @@ Sol_P2_7 = [ val for val in itertools.combinations( set( [ "E1", "E2", "E3", "E4
                                                            "E5", "E6", "E7", "E8" ] ) , 2 ) ]
 
 
+
+# Problema 2-4
+Sol_P2_4 = [ val for val in itertools.combinations( set( range(1, 7) ) , 0 ) ]
+
