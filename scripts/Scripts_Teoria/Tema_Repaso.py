@@ -122,3 +122,24 @@ Sol_P2_7 = [ val for val in itertools.combinations( set( [ "E1", "E2", "E3", "E4
 # Problema 2-4
 Sol_P2_4 = [ val for val in itertools.combinations( set( range(1, 7) ) , 0 ) ]
 
+
+Sol_P2_4 = [ val for val in itertools.combinations_with_replacement( set( range(1, 13) ) , 1 ) ]
+
+
+"  Soluciones Problemas Propuesto Tema 1 "
+
+# Problema 1-1
+Sol_P11_T1_part1 = [ val for val in itertools.permutations( set( [ "R", "A", "V", "N" ]) , 3) ]
+Sol_P11_T1_part2 = [ val for val in itertools.product( set( range(1, 4) ) , repeat=3) ]
+
+Sol_P11_T1 = []
+for part1 in Sol_P11_T1_part1:
+    for part2 in Sol_P11_T1_part2:
+        val1 = part1[ 0 ] + str( part2[ 0 ] )
+        val2 = part1[ 1 ] + str( part2[ 1 ] )
+        val3 = part1[ 2 ] + str( part2[ 2 ] )
+        Sol_P11_T1.append( ( val1, val2, val3 ) )
+
+
+
+
